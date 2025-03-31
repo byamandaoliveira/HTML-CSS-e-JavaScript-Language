@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="1.site-portfolio.styles.css">
+  <title>Portifolio | Amanda Oliveira</title>
+</head>
+
+<body>
+
+  <div class="particula"></div>
+
+  <nav class="navegacao">
+    <ul class="menu">
+      <li>
+        <a href="#inicio" class="menu-link">Início</a>
+      </li>
+      <li>
+        <a href="#sobre" class="menu-link">Sobre</a>
+      </li>
+      <li>
+        <a href="#linguagens" class="menu-link">Linguagens</a>
+      </li>
+      <li>
+        <a href="#contato" class="menu-link">Contato</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="inicio" class="cabecalho">
+    <img src="./img/Imagem do WhatsApp de 2024-03-17 à(s) 20.17.07_53ca698e.jpg" alt="Foto de Amanda Oliveira"
+      class="foto-perfil">
+    <h1>Amanda Oliveira</h1>
+    <p class="subtitulo">Futura Desenvolvedora Full Stack!</p>
+
+  </main>
+
+  <section id="sobre" class="sobre">
+    <h2 class="sobre-titulo">Sobre Mim</h2>
+    <div class="sobre-caixa">
+      <p class="sobre-paragrafo">
+        Após passar pela carreira administrativa e desempenhar atividades de Business Intelligence (Tecnologia da
+        Informação), desenvolvi amor pela programação e inteligência artificial. Atualmente, minha meta é tornar-me
+        Desenvolvedora Full Stack e utilizar das aplicações de AI para promover as melhores soluções. Porém, atualmente,
+        estou estruturando meus conhecimentos em BACK-END para, posteriormente, adentrar em FRONT-END. Outra paixão é
+        compartilhar do meu conhecimento e ensinar as pessoas que estão iniciando na área as melhores práticas,
+        ferramentas e códigos.
+      </p>
+    </div>
+  </section>
+
+  <section id="linguagens" class="linguagens">
+    <h2 class="projetos-titulo">Linguagens Utilizadas</h2>
+    <div class="projetos-caixa">
+
+      <div class="projetos-card">
+        <img src="./img/html5.jpg" alt="Projeto 1" class="projetos-imagem">
+        <div class="caixa-texto-projeto">
+          <h3 class="info-projetos">HTML5</h3>
+          <p class="projetos-paragrafo">Este site/portifólio foi minha primeira criação em HTML após muitos estudos e vídeos de Youtube.</p>
+        </div>
+      </div>
+
+      <div class="projetos-card">
+        <img src="./img/css.jpg" alt="Projeto 2" class="projetos-imagem">
+        <div class="caixa-texto-projeto">
+          <h3 class="info-projetos">CSS3</h3>
+          <p class="projetos-paragrafo">Este site/portifólio foi minha primeira aplicação CSS após muitos estudos e vídeos de Youtube. O meu tema escolhido foi em tons rosa e roxo escuro.</p>
+        </div>
+      </div>
+
+      <div class="projetos-card">
+        <img src="./img/javascript.jpg" alt="Projeto 3" class="projetos-imagem">
+        <div class="caixa-texto-projeto">
+          <h3 class="info-projetos">JAVASCRIPT</h3>
+          <p class="projetos-paragrafo">Este site/portifólio foi minha primeira aplicação JavaScript após muitos estudos e vídeos de Youtube. Utilizado no formulário para submissão.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contato" class="Contato">
+    <h2 class="contato-titulo">Entre em Contato</h2>
+
+    <form class="formulario-contato" id="formulario" onsubmit="envirwhats(event)">
+      <div class="grupo-form">
+        <input placeholder="Nome" class="campo-form" id="nome">
+      </div>
+
+      <div class="grupo-form">
+        <textarea class="campo-form" placeholder="Escreva sua mensagem" rows="6" id="mensagem"></textarea>
+      </div>
+      <button type="submit" class="botao-form">Enviar WhatsApp</button>
+
+    </form>
+  </section>
+
+  <script>
+
+    function envirwhats(event) {
+
+      event.preventDefault()
+
+      const nome = document.getElementById('nome').value;
+      const mensagem = document.getElementById('mensagem').value;
+      const telefone = '5514998330699';
+
+      const texto = `Olá, Me chamo ${nome}, ${mensagem}`
+      const msgfotmatada = encodeURIComponent(texto)
+
+      const url = `https://wa.me/${telefone}/?text=${msgfotmatada}`
+
+      window.open(url, '_blank')
+
+    }
+
+  </script>
+
+</body>
+
+</html>
