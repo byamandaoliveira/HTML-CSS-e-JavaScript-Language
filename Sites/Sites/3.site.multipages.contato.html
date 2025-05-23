@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--and font awesome-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contatos | Evolutech Corp</title>
+</head>
+
+<body>
+    <!--header-->
+    <header style="background-image: url('img/background-contacto.jpg');">
+        <!--container-->
+        <div class="container">
+            <nav>
+                <a class="logo" href="index.html">
+                    <img src="./img/logo_evolutech corp.png" alt="logo">
+                </a>
+
+                <ul class="ul">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a class="btn" href="contato.html">Contato</a>
+
+                    <div class="close-icon" onclick="closeMenu()">
+                        <i class="fa fa-times-circle"></i>
+                    </div>
+
+                </ul>
+
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+            </nav>
+
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Contatos</h1>
+                </div>
+            </section>
+        </div>
+        <!--end container-->
+    </header>
+    <!--end header-->
+
+    <section class="contato">
+        <div class="container">
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.1666326322666!2d-49.967439396047986!3d-22.23375560945433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bfd7386e42f611%3A0x18636cf8fd387b35!2sUNIVEM%20-%20Universidade%20Euripides%20%7C%20Marilia!5e0!3m2!1spt-BR!2sbr!4v1747143209646!5m2!1spt-BR!2sbr"
+                    width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contato-info">
+                <div class="left-side">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p>Rua Hygino Muzy Filho,529 - Mirante, Marília - SP, 17525-901</p>
+
+                        <i class="fa fa-envelope"></i>
+                        <p>Rua Hygino Muzy Filho,529</p>
+
+                        <i class="fa fa-phone"></i>
+                        <p>Rua Hygino Muzy Filho,529</p>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <form action="">
+                        <input type="text" placeholder="Seu Nome" required>
+                        <input type="e-mail" placeholder="E-mail" required>
+                        <input type="text" placeholder="Assunto" required>
+                        <textarea cols="30" rows="10" placeholder="Sua mensagem..." required></textarea>
+                        <button class="btn">Enviar Mensagem!</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <a href="#"> <i class="fa fa-facebook"></i></a>
+                <a href="#"> <i class="fa fa-instagram"></i></a>
+                <a href="#"> <i class="fa fa-github"></i></a>
+                <a href="#"> <i class="fa fa-linkedin"></i></a>
+            </div>
+            <p>Desenvolvido por Amanda Oliveira</p>
+        </div>
+    </footer>
+    <!--and footer-->
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>
